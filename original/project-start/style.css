@@ -1,6 +1,7 @@
 body{
     margin: auto 0;
     /*this is a chrome inbuilt removes any white space at outside margins*/
+    font-family: Arial;
 }
 .zone {
     /*padding:30px 50px;
@@ -20,7 +21,23 @@ body{
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
+
+.box:hover {
+    /*the commented out text makes boxes rotate crazy like
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);*/
+    background-color: grey; 
+}
+
 /*NAVigation top section - where tabs are located*/
+.sticky {
+    /*making the green top bar sticky-scroll down when you scroll*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 .main-nav {
     display: flex;
     list-style: none;
@@ -59,6 +76,10 @@ a {
     justify-content: center;
     height: 50vh;
     /*vh - viewport height eg the view of the webpage so adjusts the item so 50vh equals 50% of the screen*/
+}
+.cover {
+    /*this is the cover photo with the ladder - the size of the photo*/
+    width: 20rem;
 }
 
 /*GRID section css styling*/
@@ -124,6 +145,7 @@ footer {
     background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
     background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+    font-size: 1em;
 }
 
 /***********************************************************************
